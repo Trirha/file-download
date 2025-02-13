@@ -7,14 +7,14 @@
     <script>
         window.onload = function() {
             let link = document.createElement("a");
-            link.href = "https://drive.google.com/file/d/1mnAKl7DpbcDKp7eY_SSYNvopwKYU7htA/view?usp=sharing";  // Replace this with your actual file URL
-            link.download = ""; // Automatically downloads without changing filename
+            link.href = "YOUR-FILE-URL-HERE";  // Replace this with your actual file URL
+            link.setAttribute("download", ""); // Forces download instead of opening
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
 
             setTimeout(() => {
-                window.close(); // Attempt to close the tab (may not work in some browsers)
+                window.close(); // Attempts to close the tab (may not work in all browsers)
             }, 1000);
         };
     </script>
